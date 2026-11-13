@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Foodloop: informação e registro para reduzir o desperdício de alimentos (ODS 12).">
+  <title>Foodloop | Menos desperdício de alimentos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark site-nav" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="img/masan.svg" alt="" width="32" height="32">
+          Foodloop
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="dicas.html">Boas práticas</a></li>
+            <li class="nav-item"><a class="nav-link" href="registro.html">Registrar sobras</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="titulo-hero">Casca de banana não é lixo.</h1>
+          <p class="lead">Muito do que jogamos fora em casa, no mercado e no restaurante ainda serve de adubo, de refeição ou de doação. Falta informação para perceber isso na hora.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary btn-lg" href="registro.html">Registrar uma sobra</a>
+            <a class="btn btn-primary btn-lg" href="dicas.html">Ver boas práticas</a>
+          </div>
+        </div>
+        <aside aria-label="Exemplos de reaproveitamento">
+          <dl class="destinos">
+            <dt>Borra de café</dt><dd>Adubo para plantas e composteira</dd>
+            <dt>Talo de brócolis</dt><dd>Refogado, sopa ou farofa</dd>
+            <dt>Pão amanhecido</dt><dd>Torrada ou farinha de rosca</dd>
+            <dt>Excedente do dia</dt><dd>Doação para banco de alimentos</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container secao" aria-labelledby="titulo-problema">
+      <h2 id="titulo-problema">Onde o desperdício acontece</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col"><article class="card h-100"><div class="card-body">
+          <h3 class="h5 card-title">Na cozinha de casa</h3>
+          <p class="card-text">Compras além do necessário, sobras esquecidas na geladeira e cascas que vão direto para o saco de lixo.</p>
+        </div></article></div>
+        <div class="col"><article class="card h-100"><div class="card-body">
+          <h3 class="h5 card-title">Em mercados e restaurantes</h3>
+          <p class="card-text">Alimentos próximos da validade ou fora do padrão de aparência são descartados sem passar por doação ou reaproveitamento.</p>
+        </div></article></div>
+        <div class="col"><article class="card h-100"><div class="card-body">
+          <h3 class="h5 card-title">Na falta de incentivo</h3>
+          <p class="card-text">Quem quer fazer diferente nem sempre encontra orientação clara ou estímulo público. Este site é um primeiro passo nessa direção.</p>
+        </div></article></div>
+      </div>
+    </section>
+
+    <section class="container secao" aria-labelledby="titulo-como">
+      <h2 id="titulo-como">O que você pode fazer aqui</h2>
+      <div class="row g-3">
+        <div class="col-md-6"><h3 class="h5">Aprender</h3><p>Veja o que pode ir para a composteira, como comprar só o necessário e receitas com partes que costumam ser descartadas.</p></div>
+        <div class="col-md-6"><h3 class="h5">Registrar e acompanhar</h3><p>Anote o que sobrou, escolha um destino melhor que o lixo e acompanhe o histórico de ações no painel de atividades.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="mb-1">Protótipo acadêmico alinhado à ODS 12: consumo e produção responsáveis.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
