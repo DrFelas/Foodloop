@@ -1,0 +1,72 @@
+:root {
+  --verdao: #002906;
+  --verdinho: #25915e;
+  --verde: #6dc560;
+  --realce: #e4623a;
+  --fundo: #edf2ea;
+  --papel: #ffffff;
+}
+
+body { background: var(--fundo); color: var(--verdao); font-family: "Nunito Sans", system-ui, sans-serif; line-height: 1.6; }
+h1, h2, h3, .navbar-brand { font-family: "Bricolage Grotesque", system-ui, sans-serif; letter-spacing: -0.01em; }
+h1 { font-size: 2rem; font-weight: 800; }
+h2 { font-weight: 600; }
+:focus-visible { outline: 3px solid var(--realce); outline-offset: 2px; }
+
+/* configurações bootstrap */
+.btn-primary {
+  --bs-btn-bg: var(--verde); --bs-btn-border-color: var(--verde);
+  --bs-btn-hover-bg: #3c6e2a; --bs-btn-hover-border-color: #3c6e2a;
+  --bs-btn-active-bg: #3c6e2a; --bs-btn-active-border-color: #3c6e2a;
+}
+.card { border: 1px solid #d3dccf; border-radius: 0.5rem; }
+.accordion-button:not(.collapsed) { background: #dfe9dc; color: var(--verdao); }
+
+/* Estrutura geral */
+.site-nav { background: var(--verdao); }
+.site-nav .navbar-brand { font-size: 1.4rem; font-weight: 800; color: #fff; }
+.secao { padding-block: 2rem; }
+.texto-estreito { max-width: 60ch; }
+.site-footer { background: var(--verdao); color: #d7e2d3; padding-block: 1.5rem; margin-top: 2rem; }
+
+/* Hero: texto abaixo do nav, primeiro elemento que o usuário bate o olho */
+.hero { background: #dfe9dc; padding-block: 2.5rem; }
+.hero-grid { display: grid; gap: 2rem; }
+.destinos { display: grid; gap: 0.25rem 1rem; margin: 0; padding: 1rem 1.25rem; background: var(--papel); border-left: 6px solid var(--verdinho); border-radius: 0.5rem; }
+.destinos dt { font-weight: 800; color: var(--verde); margin-top: 0.75rem; }
+.destinos dt:first-child { margin-top: 0; }
+.destinos dd { margin: 0; }
+
+.chamada { margin-top: 2rem; padding: 1.25rem; background: var(--papel); border-left: 6px solid var(--realce); border-radius: 0.5rem; }
+
+/* Página de registro */
+.registro-layout { display: grid; gap: 1.5rem; }
+.privacidade { color: #4a5a46; }
+
+/* Itens da lista: Flexbox */
+.item-registro { display: flex; flex-direction: column; gap: 0.5rem; }
+.item-registro .acoes { display: flex; gap: 0.5rem; }
+.item-dica { font-size: 0.9rem; color: #3f4f3b; margin: 0; }
+.lista-vazia { padding: 1rem; background: var(--papel); border: 1px dashed #aab8a6; border-radius: 0.5rem; }
+
+/* Painel de atividades */
+.painel-log { list-style: none; margin: 0; padding: 0; max-height: 18rem; overflow-y: auto; background: var(--verdao); color: #e6efe3; border-radius: 0.5rem; font-size: 0.9rem; }
+.painel-log li { padding: 0.5rem 0.75rem; border-bottom: 1px solid #34452f; }
+.painel-log time { display: block; color: #a9bba5; font-size: 0.8rem; }
+.painel-log .falha { border-left: 4px solid var(--realce); }
+
+/* mobile */
+@media (min-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  .registro-layout { grid-template-columns: 1fr 1fr; align-items: start; }
+  .painel { grid-column: 1 / -1; }
+  .item-registro { flex-direction: row; justify-content: space-between; align-items: center; }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  h1 { font-size: 3.25rem; }
+  .hero { padding-block: 4rem; }
+  .hero-grid { grid-template-columns: 3fr 2fr; align-items: center; }
+  .registro-layout { grid-template-columns: 5fr 7fr; }
+}
